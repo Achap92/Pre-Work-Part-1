@@ -40,3 +40,100 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
+.div-border {
+  width: 500px;
+  border: 2px solid gray;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+.div-border-progress-bar {
+  border: 2px solid gray;
+  width: 500px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  display: inline-block;
+  background-color: orange;
+}
+
+.rcorners1 {
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px 32px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.centertext {
+  text-align: center;
+}
+
+.centerbuttons {
+  display: flex; // define a flex container
+  flex-direction: column; // arrange items in column
+  justify-content: center; // align vertically center
+}
+
+.flex-container-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.redbold {
+  color: red;
+}
+
+.greybold {
+  color: grey;
+  background-color: light grey;
+}
+
+/* Tooltip container */
+.tooltip {
+  text-align: center;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
